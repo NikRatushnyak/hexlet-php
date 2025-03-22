@@ -1,6 +1,9 @@
 {
     "name": "nikita/hexlet-php",
     "autoload": {
+        "files": [
+            "src/Runner.php"
+        ],
         "psr-4": {
             "Nikita\\HexletPhp\\": "src/"
         }
@@ -11,5 +14,11 @@
             "email": "ratnik41329@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "illuminate/collections": "^12.3",
+        "tightenco/collect": "^9.52"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    }
 }
